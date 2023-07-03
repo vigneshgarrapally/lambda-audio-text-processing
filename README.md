@@ -19,7 +19,7 @@ The repository also includes a layers directory that contains a .zip file with t
 1. Clone the repository to your local machine.
 2. Duplicate the .env.example file and rename it to .env.
 3. In the .env file, add your API keys for the third-party APIs that you will be using.
-4. Run the scrips to create the Lambda functions.
+4. Run the scrips to create respective Lambda functions.
 
 ## TODO
 
