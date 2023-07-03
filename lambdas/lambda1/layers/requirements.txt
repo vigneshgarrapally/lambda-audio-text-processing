@@ -1,0 +1,3 @@
+openai
+deepgram-sdk
+boto3

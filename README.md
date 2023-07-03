@@ -21,11 +21,10 @@ The repository also includes a layers directory that contains a .zip file with t
 3. In the .env file, add your API keys for the third-party APIs that you will be using.
 4. Run the scrips to create respective Lambda functions.
 
-## TODO
+## What to expect in the future
 
-- [ ] Complete three Lambda Functions
-- [ ] Deploy Lambda Functions to AWS
+- [ ] Complete third Lambda Functions
+- [ ] Suggested Improvements based on the feedback.
 - [ ] Add Detailed Documentation for each Lambda Function
-- [ ] Add logging and Exception Handling to each Lambda Function
-- [ ] Programatically create Lambda Functions without using the AWS Console
+- [ ] Programatically create Layers and Lambda Functions in a single click without using the AWS Console
 - [ ] Code cleanup and refactoring
