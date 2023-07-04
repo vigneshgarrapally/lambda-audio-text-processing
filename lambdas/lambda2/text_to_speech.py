@@ -74,7 +74,7 @@ def lambda_handler(event, context):
     print(body)
     # get text from body
     text = body.get("text", "")
-    api = body.get("api", "")
+    api = body.get("api", "google")
     print("API to use for transcription: ", api)
     filename = "/tmp/" + datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S") + ".wav"
     print(filename)

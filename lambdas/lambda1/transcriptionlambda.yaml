@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: "AWS::Serverless-2016-10-31"
+Description: An AWS Serverless lambda function that creates a transcription for an audio file
+Resources:
+  transcriptionlambda:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.10
+      CodeUri: .
+      Description: ""
+      MemorySize: 128
+      Timeout: 123
+      Role: >-
+        arn:aws:iam::your-aws-account-id:role/your-role-name
+      Environment:
+        Variables:
+          AWS_BUCKET_NAME: your-bucket-name
+          DEEPGRAM_API_KEY: deepgram-api-key
+          OPENAI_API_KEY: openai-api-key
+      Layers:
+        - "paster aws lambda layer arn"
+      RuntimeManagementConfig:
+        UpdateRuntimeOn: Auto
