@@ -13,7 +13,7 @@ PowerShell commands to build the layer:
 ```powershell
 docker pull public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
 docker run -it -v  ${PWD}:/var/task public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
-foldername="transcriptionlayer"
+foldername="langchainlayer"
 pip install -r requirements.txt -t python/
 zip -r "$foldername.zip" ./python/
 ```
@@ -23,7 +23,7 @@ Bash commands to build the layer:
 ```bash
 docker pull public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
 docker run -it -v $(pwd):/var/task public.ecr.aws/sam/build-python3.10:1.84.0-20230517004040
-foldername="transcriptionlayer"
+foldername="langchainlayer"
 pip install -r requirements.txt -t python/
 zip -r "$foldername.zip" ./python/
 ```

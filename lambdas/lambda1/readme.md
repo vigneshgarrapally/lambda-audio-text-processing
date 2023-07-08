@@ -18,7 +18,7 @@ This folder contains the code for the transcription lambda.This Lambda will take
 1. Create a new Lambda function in the AWS console.
 2. Upload the code in this folder to the Lambda function.
 3. Upload the [layer](./layers/transcriptionlayer.zip) in the `layer` folder to the Lambda function and add it as a layer.
-4. Make sure the Lambda function has access to the S3 bucket where the audio files are stored by adding the appropriate permissions to the execution role of the Lambda function.
+4. Make sure the Lambda function has access to the S3 bucket where the audio files are stored by adding the appropriate permissions to the execution role of the Lambda function. Sample Execution Role Policy can be found [here](./transcription_executionrole.json).
 5. Update the required environment variables in the Lambda function.
 6. Update the Resource values as shown in the [SAM template](./transcriptionlambda.yaml).
 7. Deploy the Lambda function
