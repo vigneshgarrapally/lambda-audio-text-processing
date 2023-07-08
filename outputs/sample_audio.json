@@ -1,9 +1,9 @@
 {
     "metadata": {
         "transaction_key": "deprecated",
-        "request_id": "255455aa-907d-4bc2-9d6b-241436f1fa3a",
+        "request_id": "eb66fff9-16b5-4586-822d-1e9d8197dfb3",
         "sha256": "fa17a09a3b178331ee313ed86055b514ba1e4d3622623305d8359457b1a08224",
-        "created": "2023-07-03T18:24:49.717Z",
+        "created": "2023-07-08T18:20:16.944Z",
         "duration": 70.334564,
         "channels": 1,
         "models": [
@@ -22,70 +22,70 @@
             {
                 "alternatives": [
                     {
-                        "transcript": "This dynamic workshop aims to provide up to date information on pharmacological approach as comma issues, comma and treatment in the geriatric population to assist in preventing medication related problems, comma appropriately and effectively managing medications and compliance period. The concept of poly pharmacy parenthesis taking multiple types of drugs parenthesis will also be discussed as this is a common issue that can impact adverse side effects in the aeriatric population period. Participants will leave with the knowledge and considerations of common drug interaction and how to minimize the effects that limit function, period. Summit professional education is approved provider of continuing education Perion. This course is offered for six units. Period. This course contains content classified under the both the domain of patiental therapy and professional issues, period.",
-                        "confidence": 0.99803454,
+                        "transcript": "This dynamic workshop aims to provide up to date information on pharmacological approach as comma issues, comma and treatment in the geriatric population to assist in preventing medication related problems, comma appropriately and effectively managing medications and compliance period. The concept of poly pharmacy parenthesis taking multiple types of drugs parenthesis will also be discussed as this is a common issue that can impact adverse side effects in the aeriatric population period. Participants will leave with the knowledge and considerations of common drug interaction and how to minimize the effects that limit function, period. Summit professional education is approved provider of continuing education Perion. This course is offered for six units. Perion. This course contains content classified under the both the domain of patiental therapy and professional issues, period.",
+                        "confidence": 0.99802315,
                         "words": [
                             {
                                 "word": "this",
                                 "start": 1.3993001,
                                 "end": 1.6391801,
-                                "confidence": 0.70923746,
+                                "confidence": 0.7131611,
                                 "punctuated_word": "This"
                             },
                             {
                                 "word": "dynamic",
                                 "start": 1.6391801,
                                 "end": 2.1391802,
-                                "confidence": 0.99970573,
+                                "confidence": 0.999707,
                                 "punctuated_word": "dynamic"
                             },
                             {
                                 "word": "workshop",
                                 "start": 2.2388802,
                                 "end": 2.7388802,
-                                "confidence": 0.9974951,
+                                "confidence": 0.9975144,
                                 "punctuated_word": "workshop"
                             },
                             {
                                 "word": "aims",
                                 "start": 2.87856,
                                 "end": 3.2783601,
-                                "confidence": 0.99963033,
+                                "confidence": 0.99963135,
                                 "punctuated_word": "aims"
                             },
                             {
                                 "word": "to",
                                 "start": 3.2783601,
                                 "end": 3.43828,
-                                "confidence": 0.9998322,
+                                "confidence": 0.99983233,
                                 "punctuated_word": "to"
                             },
                             {
                                 "word": "provide",
                                 "start": 3.43828,
                                 "end": 3.93828,
-                                "confidence": 0.99997056,
+                                "confidence": 0.9999704,
                                 "punctuated_word": "provide"
                             },
                             {
                                 "word": "up",
                                 "start": 3.9980001,
                                 "end": 4.1979003,
-                                "confidence": 0.9992548,
+                                "confidence": 0.99925625,
                                 "punctuated_word": "up"
                             },
                             {
                                 "word": "to",
                                 "start": 4.1979003,
                                 "end": 4.35782,
-                                "confidence": 0.9995932,
+                                "confidence": 0.9995928,
                                 "punctuated_word": "to"
                             },
                             {
                                 "word": "date",
                                 "start": 4.35782,
                                 "end": 4.63768,
-                                "confidence": 0.9997091,
+                                "confidence": 0.99970925,
                                 "punctuated_word": "date"
                             },
                             {
@@ -99,7 +99,7 @@
                                 "word": "on",
                                 "start": 5.43728,
                                 "end": 5.6371803,
-                                "confidence": 0.9994093,
+                                "confidence": 0.9994117,
                                 "punctuated_word": "on"
                             },
                             {
@@ -113,70 +113,70 @@
                                 "word": "approach",
                                 "start": 6.7566204,
                                 "end": 7.015,
-                                "confidence": 0.9979442,
+                                "confidence": 0.99795794,
                                 "punctuated_word": "approach"
                             },
                             {
                                 "word": "as",
                                 "start": 7.17492,
                                 "end": 7.65468,
-                                "confidence": 0.7879863,
+                                "confidence": 0.7882807,
                                 "punctuated_word": "as"
                             },
                             {
                                 "word": "comma",
                                 "start": 7.65468,
                                 "end": 8.15468,
-                                "confidence": 0.91016984,
+                                "confidence": 0.9104114,
                                 "punctuated_word": "comma"
                             },
                             {
                                 "word": "issues",
                                 "start": 8.2144,
                                 "end": 8.7144,
-                                "confidence": 0.96511686,
+                                "confidence": 0.9649352,
                                 "punctuated_word": "issues,"
                             },
                             {
                                 "word": "comma",
                                 "start": 8.89406,
                                 "end": 9.39406,
-                                "confidence": 0.9997189,
+                                "confidence": 0.99971944,
                                 "punctuated_word": "comma"
                             },
                             {
                                 "word": "and",
                                 "start": 9.45378,
                                 "end": 9.69366,
-                                "confidence": 0.5455961,
+                                "confidence": 0.5447616,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "treatment",
                                 "start": 9.69366,
                                 "end": 10.17342,
-                                "confidence": 0.9963961,
+                                "confidence": 0.9964032,
                                 "punctuated_word": "treatment"
                             },
                             {
                                 "word": "in",
                                 "start": 10.17342,
                                 "end": 10.4133,
-                                "confidence": 0.9982975,
+                                "confidence": 0.9983008,
                                 "punctuated_word": "in"
                             },
                             {
                                 "word": "the",
                                 "start": 10.4133,
                                 "end": 10.6132,
-                                "confidence": 0.9985751,
+                                "confidence": 0.9985744,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "geriatric",
                                 "start": 10.6132,
                                 "end": 11.1132,
-                                "confidence": 0.9996055,
+                                "confidence": 0.9996043,
                                 "punctuated_word": "geriatric"
                             },
                             {
@@ -190,168 +190,168 @@
                                 "word": "to",
                                 "start": 12.1724205,
                                 "end": 12.33234,
-                                "confidence": 0.9805142,
+                                "confidence": 0.9804763,
                                 "punctuated_word": "to"
                             },
                             {
                                 "word": "assist",
                                 "start": 12.33234,
                                 "end": 12.69216,
-                                "confidence": 0.9959937,
+                                "confidence": 0.9960105,
                                 "punctuated_word": "assist"
                             },
                             {
                                 "word": "in",
                                 "start": 12.69216,
                                 "end": 12.85208,
-                                "confidence": 0.98664093,
+                                "confidence": 0.98671013,
                                 "punctuated_word": "in"
                             },
                             {
                                 "word": "preventing",
                                 "start": 12.85208,
                                 "end": 13.35208,
-                                "confidence": 0.99947697,
+                                "confidence": 0.99947727,
                                 "punctuated_word": "preventing"
                             },
                             {
                                 "word": "medication",
                                 "start": 13.89156,
                                 "end": 14.39156,
-                                "confidence": 0.99963415,
+                                "confidence": 0.9996338,
                                 "punctuated_word": "medication"
                             },
                             {
                                 "word": "related",
                                 "start": 14.6112,
                                 "end": 15.09096,
-                                "confidence": 0.9998418,
+                                "confidence": 0.99984163,
                                 "punctuated_word": "related"
                             },
                             {
                                 "word": "problems",
                                 "start": 15.09096,
                                 "end": 15.59096,
-                                "confidence": 0.9154098,
+                                "confidence": 0.91528904,
                                 "punctuated_word": "problems,"
                             },
                             {
                                 "word": "comma",
                                 "start": 15.610701,
                                 "end": 16.1,
-                                "confidence": 0.9986644,
+                                "confidence": 0.9986724,
                                 "punctuated_word": "comma"
                             },
                             {
                                 "word": "appropriately",
                                 "start": 16.33988,
                                 "end": 16.83988,
-                                "confidence": 0.9995406,
+                                "confidence": 0.99954516,
                                 "punctuated_word": "appropriately"
                             },
                             {
                                 "word": "and",
                                 "start": 17.0995,
                                 "end": 17.2994,
-                                "confidence": 0.9959002,
+                                "confidence": 0.9959048,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "effectively",
                                 "start": 17.2994,
                                 "end": 17.7994,
-                                "confidence": 0.99965906,
+                                "confidence": 0.9996593,
                                 "punctuated_word": "effectively"
                             },
                             {
                                 "word": "managing",
                                 "start": 18.17896,
                                 "end": 18.67896,
-                                "confidence": 0.99031264,
+                                "confidence": 0.9902468,
                                 "punctuated_word": "managing"
                             },
                             {
                                 "word": "medications",
                                 "start": 18.73868,
                                 "end": 19.23868,
-                                "confidence": 0.9881286,
+                                "confidence": 0.98806876,
                                 "punctuated_word": "medications"
                             },
                             {
                                 "word": "and",
                                 "start": 19.45832,
                                 "end": 19.6982,
-                                "confidence": 0.99545145,
+                                "confidence": 0.9954601,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "compliance",
                                 "start": 19.6982,
                                 "end": 20.1982,
-                                "confidence": 0.99980015,
+                                "confidence": 0.99980074,
                                 "punctuated_word": "compliance"
                             },
                             {
                                 "word": "period",
                                 "start": 20.377861,
                                 "end": 20.877861,
-                                "confidence": 0.9871789,
+                                "confidence": 0.9872058,
                                 "punctuated_word": "period."
                             },
                             {
                                 "word": "the",
                                 "start": 21.6972,
                                 "end": 21.85712,
-                                "confidence": 0.9980456,
+                                "confidence": 0.99804753,
                                 "punctuated_word": "The"
                             },
                             {
                                 "word": "concept",
                                 "start": 21.85712,
                                 "end": 22.35712,
-                                "confidence": 0.999568,
+                                "confidence": 0.9995683,
                                 "punctuated_word": "concept"
                             },
                             {
                                 "word": "of",
                                 "start": 22.41684,
                                 "end": 22.536781,
-                                "confidence": 0.9997606,
+                                "confidence": 0.9997603,
                                 "punctuated_word": "of"
                             },
                             {
                                 "word": "poly",
                                 "start": 22.536781,
                                 "end": 22.85662,
-                                "confidence": 0.9669866,
+                                "confidence": 0.96712965,
                                 "punctuated_word": "poly"
                             },
                             {
                                 "word": "pharmacy",
                                 "start": 22.85662,
                                 "end": 23.35662,
-                                "confidence": 0.674684,
+                                "confidence": 0.6746991,
                                 "punctuated_word": "pharmacy"
                             },
                             {
                                 "word": "parenthesis",
                                 "start": 23.95482,
                                 "end": 24.45482,
-                                "confidence": 0.91762507,
+                                "confidence": 0.91991156,
                                 "punctuated_word": "parenthesis"
                             },
                             {
                                 "word": "taking",
                                 "start": 24.95432,
                                 "end": 25.354122,
-                                "confidence": 0.7597961,
+                                "confidence": 0.7589217,
                                 "punctuated_word": "taking"
                             },
                             {
                                 "word": "multiple",
                                 "start": 25.354122,
                                 "end": 25.833881,
-                                "confidence": 0.99981177,
+                                "confidence": 0.9998115,
                                 "punctuated_word": "multiple"
                             },
                             {
@@ -365,567 +365,567 @@
                                 "word": "of",
                                 "start": 26.11374,
                                 "end": 26.31364,
-                                "confidence": 0.9994907,
+                                "confidence": 0.9994901,
                                 "punctuated_word": "of"
                             },
                             {
                                 "word": "drugs",
                                 "start": 26.31364,
                                 "end": 26.673462,
-                                "confidence": 0.8459537,
+                                "confidence": 0.8463688,
                                 "punctuated_word": "drugs"
                             },
                             {
                                 "word": "parenthesis",
                                 "start": 26.673462,
                                 "end": 27.173462,
-                                "confidence": 0.73941016,
+                                "confidence": 0.7403002,
                                 "punctuated_word": "parenthesis"
                             },
                             {
                                 "word": "will",
                                 "start": 27.55302,
                                 "end": 27.792902,
-                                "confidence": 0.9919619,
+                                "confidence": 0.9919021,
                                 "punctuated_word": "will"
                             },
                             {
                                 "word": "also",
                                 "start": 27.792902,
                                 "end": 28.152721,
-                                "confidence": 0.994406,
+                                "confidence": 0.99439245,
                                 "punctuated_word": "also"
                             },
                             {
                                 "word": "be",
                                 "start": 28.152721,
                                 "end": 28.392601,
-                                "confidence": 0.99969816,
+                                "confidence": 0.9996982,
                                 "punctuated_word": "be"
                             },
                             {
                                 "word": "discussed",
                                 "start": 28.392601,
                                 "end": 28.892601,
-                                "confidence": 0.9995714,
+                                "confidence": 0.9995729,
                                 "punctuated_word": "discussed"
                             },
                             {
                                 "word": "as",
                                 "start": 29.552021,
                                 "end": 29.831882,
-                                "confidence": 0.23483592,
+                                "confidence": 0.23482133,
                                 "punctuated_word": "as"
                             },
                             {
                                 "word": "this",
                                 "start": 29.831882,
                                 "end": 30.071762,
-                                "confidence": 0.99470454,
+                                "confidence": 0.9946975,
                                 "punctuated_word": "this"
                             },
                             {
                                 "word": "is",
                                 "start": 30.071762,
                                 "end": 30.271662,
-                                "confidence": 0.99710625,
+                                "confidence": 0.9971052,
                                 "punctuated_word": "is"
                             },
                             {
                                 "word": "a",
                                 "start": 30.271662,
                                 "end": 30.391602,
-                                "confidence": 0.9992478,
+                                "confidence": 0.99924886,
                                 "punctuated_word": "a"
                             },
                             {
                                 "word": "common",
                                 "start": 30.391602,
                                 "end": 30.751421,
-                                "confidence": 0.99961174,
+                                "confidence": 0.99961066,
                                 "punctuated_word": "common"
                             },
                             {
                                 "word": "issue",
                                 "start": 30.751421,
                                 "end": 31.151222,
-                                "confidence": 0.99897826,
+                                "confidence": 0.99897873,
                                 "punctuated_word": "issue"
                             },
                             {
                                 "word": "that",
                                 "start": 31.151222,
                                 "end": 31.351122,
-                                "confidence": 0.99967957,
+                                "confidence": 0.99967843,
                                 "punctuated_word": "that"
                             },
                             {
                                 "word": "can",
                                 "start": 31.351122,
                                 "end": 31.551022,
-                                "confidence": 0.9976757,
+                                "confidence": 0.9976932,
                                 "punctuated_word": "can"
                             },
                             {
                                 "word": "impact",
                                 "start": 31.551022,
                                 "end": 32.03078,
-                                "confidence": 0.9987116,
+                                "confidence": 0.9987113,
                                 "punctuated_word": "impact"
                             },
                             {
                                 "word": "adverse",
                                 "start": 32.03078,
                                 "end": 32.510544,
-                                "confidence": 0.9999801,
+                                "confidence": 0.99998,
                                 "punctuated_word": "adverse"
                             },
                             {
                                 "word": "side",
                                 "start": 32.510544,
                                 "end": 32.71044,
-                                "confidence": 0.999249,
+                                "confidence": 0.9992497,
                                 "punctuated_word": "side"
                             },
                             {
                                 "word": "effects",
                                 "start": 32.71044,
                                 "end": 33.150223,
-                                "confidence": 0.99946994,
+                                "confidence": 0.9994707,
                                 "punctuated_word": "effects"
                             },
                             {
                                 "word": "in",
                                 "start": 33.150223,
                                 "end": 33.310143,
-                                "confidence": 0.90791935,
+                                "confidence": 0.90789175,
                                 "punctuated_word": "in"
                             },
                             {
                                 "word": "the",
                                 "start": 33.310143,
                                 "end": 33.58,
-                                "confidence": 0.94135857,
+                                "confidence": 0.9420581,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "aeriatric",
                                 "start": 33.619984,
                                 "end": 34.119984,
-                                "confidence": 0.81691146,
+                                "confidence": 0.8090094,
                                 "punctuated_word": "aeriatric"
                             },
                             {
                                 "word": "population",
                                 "start": 34.179703,
                                 "end": 34.679703,
-                                "confidence": 0.9992203,
+                                "confidence": 0.9991339,
                                 "punctuated_word": "population"
                             },
                             {
                                 "word": "period",
                                 "start": 34.89934,
                                 "end": 35.39934,
-                                "confidence": 0.8591105,
+                                "confidence": 0.8536324,
                                 "punctuated_word": "period."
                             },
                             {
                                 "word": "participants",
                                 "start": 35.938824,
                                 "end": 36.438824,
-                                "confidence": 0.9993934,
+                                "confidence": 0.99933577,
                                 "punctuated_word": "Participants"
                             },
                             {
                                 "word": "will",
                                 "start": 36.7784,
                                 "end": 36.978302,
-                                "confidence": 0.99961835,
+                                "confidence": 0.9996361,
                                 "punctuated_word": "will"
                             },
                             {
                                 "word": "leave",
                                 "start": 36.978302,
                                 "end": 37.258163,
-                                "confidence": 0.9980171,
+                                "confidence": 0.99793255,
                                 "punctuated_word": "leave"
                             },
                             {
                                 "word": "with",
                                 "start": 37.258163,
                                 "end": 37.45806,
-                                "confidence": 0.99900585,
+                                "confidence": 0.99907213,
                                 "punctuated_word": "with"
                             },
                             {
                                 "word": "the",
                                 "start": 37.45806,
                                 "end": 37.578003,
-                                "confidence": 0.9909886,
+                                "confidence": 0.9907059,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "knowledge",
                                 "start": 37.578003,
                                 "end": 38.078003,
-                                "confidence": 0.999859,
+                                "confidence": 0.9998788,
                                 "punctuated_word": "knowledge"
                             },
                             {
                                 "word": "and",
                                 "start": 38.177704,
                                 "end": 38.497543,
-                                "confidence": 0.98968565,
+                                "confidence": 0.9891267,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "considerations",
                                 "start": 38.497543,
                                 "end": 38.997543,
-                                "confidence": 0.85638237,
+                                "confidence": 0.89143574,
                                 "punctuated_word": "considerations"
                             },
                             {
                                 "word": "of",
                                 "start": 39.53702,
                                 "end": 39.736923,
-                                "confidence": 0.9997633,
+                                "confidence": 0.9997722,
                                 "punctuated_word": "of"
                             },
                             {
                                 "word": "common",
                                 "start": 39.736923,
                                 "end": 40.136723,
-                                "confidence": 0.9991498,
+                                "confidence": 0.9992625,
                                 "punctuated_word": "common"
                             },
                             {
                                 "word": "drug",
                                 "start": 40.136723,
                                 "end": 40.41658,
-                                "confidence": 0.99978083,
+                                "confidence": 0.9997446,
                                 "punctuated_word": "drug"
                             },
                             {
                                 "word": "interaction",
                                 "start": 40.41658,
                                 "end": 40.91658,
-                                "confidence": 0.9984707,
+                                "confidence": 0.99076355,
                                 "punctuated_word": "interaction"
                             },
                             {
                                 "word": "and",
                                 "start": 41.41492,
                                 "end": 41.6548,
-                                "confidence": 0.98501813,
+                                "confidence": 0.98404783,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "how",
                                 "start": 41.6548,
                                 "end": 41.89468,
-                                "confidence": 0.9992662,
+                                "confidence": 0.9992721,
                                 "punctuated_word": "how"
                             },
                             {
                                 "word": "to",
                                 "start": 41.89468,
                                 "end": 42.0546,
-                                "confidence": 0.9997197,
+                                "confidence": 0.9997008,
                                 "punctuated_word": "to"
                             },
                             {
                                 "word": "minimize",
                                 "start": 42.0546,
                                 "end": 42.5546,
-                                "confidence": 0.9993298,
+                                "confidence": 0.99927825,
                                 "punctuated_word": "minimize"
                             },
                             {
                                 "word": "the",
                                 "start": 42.614323,
                                 "end": 42.73426,
-                                "confidence": 0.6063996,
+                                "confidence": 0.6124126,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "effects",
                                 "start": 42.73426,
                                 "end": 43.09408,
-                                "confidence": 0.98949033,
+                                "confidence": 0.98981017,
                                 "punctuated_word": "effects"
                             },
                             {
                                 "word": "that",
                                 "start": 43.09408,
                                 "end": 43.29398,
-                                "confidence": 0.99592984,
+                                "confidence": 0.9960825,
                                 "punctuated_word": "that"
                             },
                             {
                                 "word": "limit",
                                 "start": 43.29398,
                                 "end": 43.693783,
-                                "confidence": 0.99097824,
+                                "confidence": 0.99103916,
                                 "punctuated_word": "limit"
                             },
                             {
                                 "word": "function",
                                 "start": 43.693783,
                                 "end": 44.193783,
-                                "confidence": 0.5655699,
+                                "confidence": 0.55801016,
                                 "punctuated_word": "function,"
                             },
                             {
                                 "word": "period",
                                 "start": 44.53336,
                                 "end": 45.03336,
-                                "confidence": 0.98067886,
+                                "confidence": 0.97850037,
                                 "punctuated_word": "period."
                             },
                             {
                                 "word": "summit",
-                                "start": 49.34946,
+                                "start": 49.389442,
                                 "end": 49.82922,
-                                "confidence": 0.9762441,
+                                "confidence": 0.97399664,
                                 "punctuated_word": "Summit"
                             },
                             {
                                 "word": "professional",
                                 "start": 49.82922,
                                 "end": 50.32922,
-                                "confidence": 0.93418413,
+                                "confidence": 0.9378268,
                                 "punctuated_word": "professional"
                             },
                             {
                                 "word": "education",
                                 "start": 50.50888,
                                 "end": 51.00888,
-                                "confidence": 0.9986696,
+                                "confidence": 0.9986317,
                                 "punctuated_word": "education"
                             },
                             {
                                 "word": "is",
                                 "start": 51.58834,
                                 "end": 51.868202,
-                                "confidence": 0.99803454,
+                                "confidence": 0.99802315,
                                 "punctuated_word": "is"
                             },
                             {
                                 "word": "approved",
                                 "start": 51.868202,
                                 "end": 52.368202,
-                                "confidence": 0.95575094,
+                                "confidence": 0.95617557,
                                 "punctuated_word": "approved"
                             },
                             {
                                 "word": "provider",
-                                "start": 53.90718,
-                                "end": 54.40718,
-                                "confidence": 0.763282,
+                                "start": 53.94716,
+                                "end": 54.44716,
+                                "confidence": 0.7511794,
                                 "punctuated_word": "provider"
                             },
                             {
                                 "word": "of",
                                 "start": 54.74676,
                                 "end": 54.90668,
-                                "confidence": 0.9994624,
+                                "confidence": 0.99939513,
                                 "punctuated_word": "of"
                             },
                             {
                                 "word": "continuing",
                                 "start": 54.90668,
                                 "end": 55.40668,
-                                "confidence": 0.9998527,
+                                "confidence": 0.9998465,
                                 "punctuated_word": "continuing"
                             },
                             {
                                 "word": "education",
                                 "start": 55.54636,
                                 "end": 56.04636,
-                                "confidence": 0.9999161,
+                                "confidence": 0.99989206,
                                 "punctuated_word": "education"
                             },
                             {
                                 "word": "perion",
                                 "start": 57.204823,
                                 "end": 57.704823,
-                                "confidence": 0.700509,
+                                "confidence": 0.69649297,
                                 "punctuated_word": "Perion."
                             },
                             {
                                 "word": "this",
                                 "start": 57.8445,
                                 "end": 58.16434,
-                                "confidence": 0.99938077,
+                                "confidence": 0.9993784,
                                 "punctuated_word": "This"
                             },
                             {
                                 "word": "course",
                                 "start": 58.16434,
                                 "end": 58.524162,
-                                "confidence": 0.9980678,
+                                "confidence": 0.99813896,
                                 "punctuated_word": "course"
                             },
                             {
                                 "word": "is",
                                 "start": 58.524162,
                                 "end": 58.72406,
-                                "confidence": 0.99964666,
+                                "confidence": 0.99965745,
                                 "punctuated_word": "is"
                             },
                             {
                                 "word": "offered",
                                 "start": 58.72406,
                                 "end": 59.203823,
-                                "confidence": 0.99926186,
+                                "confidence": 0.99928296,
                                 "punctuated_word": "offered"
                             },
                             {
                                 "word": "for",
                                 "start": 59.203823,
                                 "end": 59.48368,
-                                "confidence": 0.9989072,
+                                "confidence": 0.9989317,
                                 "punctuated_word": "for"
                             },
                             {
                                 "word": "six",
                                 "start": 59.48368,
                                 "end": 59.80352,
-                                "confidence": 0.99936575,
+                                "confidence": 0.9994099,
                                 "punctuated_word": "six"
                             },
                             {
                                 "word": "units",
                                 "start": 59.80352,
                                 "end": 60.30352,
-                                "confidence": 0.94935215,
+                                "confidence": 0.9445262,
                                 "punctuated_word": "units."
                             },
                             {
-                                "word": "period",
+                                "word": "perion",
                                 "start": 60.443203,
                                 "end": 60.943203,
-                                "confidence": 0.7251455,
-                                "punctuated_word": "Period."
+                                "confidence": 0.8023717,
+                                "punctuated_word": "Perion."
                             },
                             {
                                 "word": "this",
                                 "start": 61.16284,
                                 "end": 61.40272,
-                                "confidence": 0.99642247,
+                                "confidence": 0.99939936,
                                 "punctuated_word": "This"
                             },
                             {
                                 "word": "course",
                                 "start": 61.40272,
                                 "end": 61.762543,
-                                "confidence": 0.9997245,
+                                "confidence": 0.9997369,
                                 "punctuated_word": "course"
                             },
                             {
                                 "word": "contains",
                                 "start": 61.762543,
                                 "end": 62.262543,
-                                "confidence": 0.9991584,
+                                "confidence": 0.9991841,
                                 "punctuated_word": "contains"
                             },
                             {
                                 "word": "content",
-                                "start": 62.4422,
-                                "end": 62.9422,
-                                "confidence": 0.65444857,
+                                "start": 62.40222,
+                                "end": 62.90222,
+                                "confidence": 0.6481653,
                                 "punctuated_word": "content"
                             },
                             {
                                 "word": "classified",
                                 "start": 63.28178,
                                 "end": 63.78178,
-                                "confidence": 0.989497,
+                                "confidence": 0.9878663,
                                 "punctuated_word": "classified"
                             },
                             {
                                 "word": "under",
                                 "start": 64.041405,
                                 "end": 64.32126,
-                                "confidence": 0.9967759,
+                                "confidence": 0.9963087,
                                 "punctuated_word": "under"
                             },
                             {
                                 "word": "the",
                                 "start": 64.32126,
                                 "end": 64.4412,
-                                "confidence": 0.75525624,
+                                "confidence": 0.7936561,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "both",
                                 "start": 64.60112,
                                 "end": 64.841,
-                                "confidence": 0.9864804,
+                                "confidence": 0.98583406,
                                 "punctuated_word": "both"
                             },
                             {
                                 "word": "the",
                                 "start": 64.841,
                                 "end": 65.00092,
-                                "confidence": 0.98357964,
+                                "confidence": 0.98263323,
                                 "punctuated_word": "the"
                             },
                             {
                                 "word": "domain",
                                 "start": 65.00092,
                                 "end": 65.48068,
-                                "confidence": 0.99943334,
+                                "confidence": 0.9995177,
                                 "punctuated_word": "domain"
                             },
                             {
                                 "word": "of",
                                 "start": 65.48068,
                                 "end": 65.8395,
-                                "confidence": 0.9768891,
+                                "confidence": 0.9787799,
                                 "punctuated_word": "of"
                             },
                             {
                                 "word": "patiental",
                                 "start": 65.87948,
                                 "end": 66.37948,
-                                "confidence": 0.6444514,
+                                "confidence": 0.6425084,
                                 "punctuated_word": "patiental"
                             },
                             {
                                 "word": "therapy",
                                 "start": 66.39922,
                                 "end": 66.89922,
-                                "confidence": 0.99984866,
+                                "confidence": 0.999848,
                                 "punctuated_word": "therapy"
                             },
                             {
                                 "word": "and",
                                 "start": 67.158844,
                                 "end": 67.35874,
-                                "confidence": 0.9725194,
+                                "confidence": 0.9721515,
                                 "punctuated_word": "and"
                             },
                             {
                                 "word": "professional",
                                 "start": 67.35874,
                                 "end": 67.85874,
-                                "confidence": 0.9991892,
+                                "confidence": 0.9991907,
                                 "punctuated_word": "professional"
                             },
                             {
                                 "word": "issues",
                                 "start": 68.11836,
                                 "end": 68.61836,
-                                "confidence": 0.90626496,
+                                "confidence": 0.90644145,
                                 "punctuated_word": "issues,"
                             },
                             {
                                 "word": "period",
                                 "start": 68.6381,
                                 "end": 69.1381,
-                                "confidence": 0.9692519,
+                                "confidence": 0.9691628,
                                 "punctuated_word": "period."
                             }
                         ]

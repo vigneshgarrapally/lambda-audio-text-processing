@@ -4,6 +4,10 @@ import boto3
 from elevenlabs import generate, set_api_key
 import google.cloud.texttospeech as tts
 import datetime
+import logging
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 
 def upload_file_to_s3(
@@ -66,18 +70,19 @@ def text_to_wav(text: str, filename: str):
     )
     with open(filename, "wb") as out:
         out.write(response.audio_content)
-        print(f'Generated speech saved to "{filename}"')
+        logging.info(f'Audio content written to file "{filename}"')
 
 
 def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
-    print(body)
+    logger.info(body)
     # get text from body
     text = body.get("text", "")
     api = body.get("api", "google")
-    print("API to use for transcription: ", api)
+    logger.info("Text: " + text)
+    logger.info("API: " + api)
     filename = "/tmp/" + datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S") + ".wav"
-    print(filename)
+    logger.info("Filename: " + filename)
     if api == "elevenlabs":
         set_api_key(os.getenv("ELEVENLABS_API_KEY"))
         audio = generate(
@@ -92,7 +97,7 @@ def lambda_handler(event, context):
     elif api == "google":
         text_to_wav(text, filename)
     else:
-        print("API not supported")
+        logger.info("API not supported. Please use elevenlabs or google")
         return {
             "statusCode": 400,
             "body": "API not supported. Please use elevenlabs or google",
@@ -100,6 +105,6 @@ def lambda_handler(event, context):
     # invoke text to speech api and generate audio
     # upload audio to s3
     s3_audio_url = upload_file_to_s3(filename, os.getenv("AWS_BUCKET_NAME"))
-    print(s3_audio_url)
+    logger.info("S3 URL: " + s3_audio_url)
     result = {"statusCode": 200, "body": json.dumps(s3_audio_url)}
     return result
