@@ -17,7 +17,7 @@ def get_presigned_url(s3_url, expiration=3600):
     Generate a presigned URL for an object in an S3 bucket.
     """
     try:
-        s3_client = boto3.client("s3", region_name="us-east-1")
+        s3_client = boto3.client("s3", region_name=os.environ.get("AWS_REGION")
         bucket_name = s3_url.split("//")[1].split(".")[0]
         object_key = s3_url.split(bucket_name + ".s3.amazonaws.com/")[1]
         response = s3_client.generate_presigned_url(
@@ -60,7 +60,7 @@ def lambda_handler(event, context):
     # check if s3 audio url ends with .wav
     if not s3_audio_url.endswith(".wav"):
         return {"statusCode": 400, "body": json.dumps("Audio file must be .wav")}
-    # get name of api to use to generate transcription. Supported apis are deepgram and elevenlabs
+    # get name of api to use to generate transcription.
     api = body.get("api_name", "whisper")
     logger.info(f"api: {api}")
     # get signed url

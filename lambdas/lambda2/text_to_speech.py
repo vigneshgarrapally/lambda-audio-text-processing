@@ -52,7 +52,7 @@ def upload_file_to_s3(
     return s3_url
 
 
-def text_to_wav(text: str, filename: str):
+def google_text_to_speech(text: str, filename: str):
     voice_name = "en-US-Wavenet-F"
     api_key_string = os.getenv("GOOGLE_CLOUD_TEXT_TO_SPEECH_API_KEY")
     language_code = "-".join(voice_name.split("-")[:2])
@@ -73,6 +73,18 @@ def text_to_wav(text: str, filename: str):
         logging.info(f'Audio content written to file "{filename}"')
 
 
+def elevenlabs_text_to_speech(text: str, filename: str):
+    set_api_key(os.getenv("ELEVENLABS_API_KEY"))
+    audio = generate(
+        text=text,
+        voice="Bella",
+        model="eleven_monolingual_v1",
+    )
+    # save audio to file
+    with open(filename, "wb") as audio_file:
+        audio_file.write(audio)
+
+
 def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
     logger.info(body)
@@ -84,27 +96,19 @@ def lambda_handler(event, context):
     filename = "/tmp/" + datetime.datetime.now().strftime("%Y-%m-%d_%H%M%S") + ".wav"
     logger.info("Filename: " + filename)
     if api == "elevenlabs":
-        set_api_key(os.getenv("ELEVENLABS_API_KEY"))
-        audio = generate(
-            text=text,
-            voice="Bella",
-            model="eleven_monolingual_v1",
-        )
-        # save audio to file
-        with open(filename, "wb") as audio_file:
-            audio_file.write(audio)
-        # upload file to S3
+        elevenlabs_text_to_speech(text, filename)
     elif api == "google":
-        text_to_wav(text, filename)
+        google_text_to_speech(text, filename)
     else:
         logger.info("API not supported. Please use elevenlabs or google")
         return {
             "statusCode": 400,
             "body": "API not supported. Please use elevenlabs or google",
         }
-    # invoke text to speech api and generate audio
     # upload audio to s3
     s3_audio_url = upload_file_to_s3(filename, os.getenv("AWS_BUCKET_NAME"))
     logger.info("S3 URL: " + s3_audio_url)
+    # delete the local file
+    os.remove(filename)
     result = {"statusCode": 200, "body": json.dumps(s3_audio_url)}
     return result

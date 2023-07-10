@@ -14,21 +14,22 @@ def lambda_handler(event, context):
     body = json.loads(event.get("body", "{}"))
     logger.info(body)
     # get text from body
-    text = body.get("text", "")
-    provided_prompt = body.get("prompt", "")
-    logger.info("Text: " + text)
-    logger.info("Prompt: " + provided_prompt)
+    input = body.get("text", "")
+    system_prompts = body.get("prompt", "")
+    temparature = body.get("temparature", 0)
+    logger.info("Text: " + input)
+    logger.info("Prompt: " + system_prompts)
     # create prompt template
-    template = "Prompt that was provided is: {provided_prompt}.Text that was provided is: {text}."
+    template = "Prompt that was provided is: {system_prompts}.Text that was provided is: {input}."
     prompt = PromptTemplate(
-        input_variables=["text", "provided_prompt"],
+        input_variables=["input", "system_prompts"],
         template=template,
     )
-    llm = OpenAI(temperature=0)
+    llm = OpenAI(temperature=temparature)
     llm_chain = LLMChain(llm=llm, prompt=prompt)
     answer = llm_chain.predict(
-        text=text,
-        provided_prompt=provided_prompt,
+        text=input,
+        provided_prompt=system_prompts,
     )
     logger.info("Answer: " + answer)
     result = {
