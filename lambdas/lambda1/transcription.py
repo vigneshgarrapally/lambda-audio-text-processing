@@ -7,6 +7,7 @@ import boto3
 import logging
 from urllib.request import urlopen
 import io
+import asyncio
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -17,7 +18,7 @@ def get_presigned_url(s3_url, expiration=3600):
     Generate a presigned URL for an object in an S3 bucket.
     """
     try:
-        s3_client = boto3.client("s3", region_name=os.environ.get("AWS_REGION")
+        s3_client = boto3.client("s3", region_name=os.environ.get("AWS_REGION"))
         bucket_name = s3_url.split("//")[1].split(".")[0]
         object_key = s3_url.split(bucket_name + ".s3.amazonaws.com/")[1]
         response = s3_client.generate_presigned_url(
@@ -31,24 +32,27 @@ def get_presigned_url(s3_url, expiration=3600):
     return response
 
 
-async def deepgram_transcribe(audio):
-    # get deepgram api key
-    deepgram_api_key = os.environ.get("DEEPGRAM_API_KEY")
+async def deepgram_transcribe(s3_signed_url):
     # create deepgram client
-    dg_client = Deepgram(deepgram_api_key)
+    dg_client = Deepgram(os.environ.get("DEEPGRAM_API_KEY"))
     options = {"punctuate": True, "model": "general", "tier": "enhanced"}
-    source = {"buffer": audio, "mimetype": "audio/wav"}
+    source = {"url": s3_signed_url}
     response = await dg_client.transcription.prerecorded(source, options)
     transcription = response["results"]["channels"][0]["alternatives"][0]["transcript"]
     return transcription
 
 
-def openai_transcribe(audio):
+def openai_transcribe(s3_signed_url, filename):
     # get whisper api key
     openai.api_key = os.getenv("OPENAI_API_KEY")
-    transcript = openai.Audio.transcribe("whisper-1", audio)
-    transcription = transcript.text
-    return transcription
+    with urlopen(s3_signed_url) as response:
+        audio = response.read()
+        audio_file = io.BytesIO(audio)
+        # get audio file name from s3 url
+        audio_file.name = filename
+        transcript = openai.Audio.transcribe("whisper-1", audio_file)
+        transcription = transcript.text
+        return transcription
 
 
 def lambda_handler(event, context):
@@ -64,19 +68,14 @@ def lambda_handler(event, context):
     api = body.get("api_name", "whisper")
     logger.info(f"api: {api}")
     # get signed url
-    signed_url = get_presigned_url(s3_audio_url)
-    logger.info(f"signed_url: {signed_url}")
-    with urlopen(signed_url) as response:
-        audio = response.read()
-        audio_file = io.BytesIO(audio)
-        # get audio file name from s3 url
-        audio_file.name = s3_audio_url.split("/")[-1]
-        if api == "deepgram":
-            # get deepgram transcription
-            transcription = deepgram_transcribe(audio_file)
-        elif api == "whisper":
-            transcription = openai_transcribe(audio_file)
-        else:
-            return {"statusCode": 400, "body": json.dumps("Invalid api name")}
+    s3_signed_url = get_presigned_url(s3_audio_url)
+    logger.info(f"signed_url: {s3_signed_url}")
+    if api == "deepgram":
+        # get deepgram transcription
+        transcription = asyncio.run(deepgram_transcribe(s3_signed_url))
+    elif api == "whisper":
+        transcription = openai_transcribe(s3_signed_url, s3_audio_url.split("/")[-1])
+    else:
+        return {"statusCode": 400, "body": json.dumps("Invalid api name")}
     logger.info(f"Transcription: {transcription}")
     return {"statusCode": 200, "body": json.dumps(transcription)}
