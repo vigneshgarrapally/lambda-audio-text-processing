@@ -22,11 +22,3 @@ The repository also includes a layers directory that contains a .zip file with t
 4. Go to respective Lambda function folder and read the readme file for deployment instructions.
 
 > Note: [Notebooks](./notebooks) folder contains various notebooks that are helpful to understand the code and test the Lambda functions.
-
-## What to expect in the future
-
-- [ ] Complete third Lambda Functions
-- [ ] Suggested Improvements based on the feedback.
-- [ ] Add Detailed Documentation for each Lambda Function
-- [ ] Programatically create Layers and Lambda Functions in a single click without using the AWS Console
-- [ ] Code cleanup and refactoring

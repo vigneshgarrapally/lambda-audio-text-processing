@@ -23,10 +23,10 @@ def lambda_handler(event, context):
         system_prompts = system_prompts
     else:
         system_prompts = ""
-    temparature = body.get("temparature", 0)
+    temperature = body.get("temperature", 0)
     logger.info("Input: " + input)
     logger.info("System Prompts: " + system_prompts)
-    logger.info("Temparature: " + str(temparature))
+    logger.info("temperature: " + str(temperature))
     # create prompt template
     template = (
         "System Prompts Provided are: {system_prompts}.Input provided is: {input}."
@@ -35,7 +35,7 @@ def lambda_handler(event, context):
         input_variables=["input", "system_prompts"],
         template=template,
     )
-    llm = OpenAI(temperature=temparature)
+    llm = OpenAI(temperature=temperature)
     llm_chain = LLMChain(llm=llm, prompt=prompt)
     answer = llm_chain.predict(
         input=input,
