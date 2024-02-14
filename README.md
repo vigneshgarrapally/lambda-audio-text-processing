@@ -1,4 +1,4 @@
-# pMD Lambda Functions
+# Lambda Functions
 
 **This repository contains the source code for three Lambda functions that can be used to transcribe audio, generate text from speech, and process text using a large language model.**
 
